@@ -1,0 +1,86 @@
+[
+  {
+    "id": "01",
+    "title": "iPhone 13 Pro — 파손 고지와 기능 주장",
+    "listingText": "아이폰 13 Pro 128GB입니다. 전면 유리가 파손됐지만 터치와 화면 표시는 정상입니다. 후면 카메라는 이상이 있어 1배~5배만 작동합니다. Face ID와 나머지 기능은 정상입니다.",
+    "images": ["tests/real-market-cases/case-01.jpg"],
+    "expectedVerdicts": ["confirmed", "not_verifiable"]
+  },
+  {
+    "id": "02",
+    "title": "iPhone 4S — A급·정품·구성품 주장",
+    "listingText": "A급 아이폰 4S 정품입니다. 유심과 카메라를 테스트했고 정상입니다. 박스와 휴대폰의 일련번호가 같으며 케이블은 포함되지만 충전기는 없습니다.",
+    "images": ["tests/real-market-cases/case-02.jpg"],
+    "expectedVerdicts": ["not_verifiable"]
+  },
+  {
+    "id": "03",
+    "title": "iPhone 12 Pro — 후면 유리 파손·배터리·무수리",
+    "listingText": "아이폰 12 Pro 256GB, 배터리 성능 81%입니다. 후면 유리만 파손됐고 카메라와 Face ID를 포함한 다른 기능은 정상입니다. 화면에는 번인과 흠집이 없고 수리나 교체 이력이 없습니다.",
+    "images": ["tests/real-market-cases/case-03.jpg"],
+    "expectedVerdicts": ["confirmed", "not_verifiable"]
+  },
+  {
+    "id": "04",
+    "title": "iPhone SE 1세대 — 새것 같은 외관·사설 배터리",
+    "listingText": "아이폰 SE 1세대 128GB 실버입니다. 흠집과 찍힘이 거의 없는 새것 같은 외관입니다. 배터리는 사설 제품으로 교체해 100%이고 Touch ID, AirDrop, 카메라가 정상입니다. 케이스와 케이블을 포함합니다.",
+    "images": ["tests/real-market-cases/case-04.jpg"],
+    "expectedVerdicts": ["not_verifiable"]
+  },
+  {
+    "id": "05",
+    "title": "iPhone 6S Plus — 흰 점 고지·기능 정상",
+    "listingText": "아이폰 6S Plus 16GB, 배터리 91%입니다. 전후면 카메라와 동영상, AirDrop, Touch ID, 터치가 정상입니다. 화면은 깨끗하지만 흰 점 두 곳이 있으니 사진을 확인해 주세요. 기기만 제공합니다.",
+    "images": ["tests/real-market-cases/case-05.jpg"],
+    "expectedVerdicts": ["not_verifiable"]
+  },
+  {
+    "id": "06",
+    "title": "iPhone 13 — 깨끗한 화면·일상 사용감",
+    "listingText": "아이폰 13 128GB 미드나이트, 배터리 86%입니다. 화면은 깨끗하고 외관에는 보통의 사용감이 있습니다. 카메라, AirDrop, 생체 인증, 터치 등 모든 기능이 정상입니다.",
+    "images": ["tests/real-market-cases/case-06.jpg"],
+    "expectedVerdicts": ["not_verifiable"]
+  },
+  {
+    "id": "07",
+    "title": "iPhone 13 mini — SS급·최상품과 생활 흠집",
+    "listingText": "아이폰 13 mini 128GB 미드나이트입니다. 배터리 76%이며 최상품 SS급입니다. 일상적인 잔기스와 후면 흠집은 조금 있습니다. 정상 해지됐고 수리 이력과 기능 불량은 없습니다.",
+    "images": ["tests/real-market-cases/case-07.jpg"],
+    "expectedVerdicts": ["not_verifiable"]
+  },
+  {
+    "id": "08",
+    "title": "iPhone 8 — A급·무잔상·배터리 교체",
+    "listingText": "아이폰 8 64GB 레드입니다. 사설 배터리로 교체해 100%이고 A급, 무잔상입니다. 화면은 깨끗하며 프레임과 후면에는 약간의 사용감이 있습니다. 카메라와 생체 인증 등 기능은 정상입니다.",
+    "images": ["tests/real-market-cases/case-08.jpg"],
+    "expectedVerdicts": ["not_verifiable"]
+  },
+  {
+    "id": "09",
+    "title": "Galaxy S23+ — 중앙 빛샘 고지",
+    "listingText": "갤럭시 S23+ 512GB 자급제입니다. 디스플레이 중앙에 빛샘이 있지만 더 커지거나 번지지는 않았습니다. 외관은 깨끗하고 터치와 기능은 정상입니다.",
+    "images": ["tests/real-market-cases/case-09.jpg"],
+    "expectedVerdicts": ["confirmed", "not_verifiable"]
+  },
+  {
+    "id": "10",
+    "title": "Galaxy S26 — A급·미사용 풀박스",
+    "listingText": "갤럭시 S26 256GB 정상 해지 공기계입니다. 상태가 매우 좋은 A급이고 구성품은 미사용 풀박스입니다. 사용하던 케이스도 함께 제공합니다.",
+    "images": ["tests/real-market-cases/case-10.jpg"],
+    "expectedVerdicts": ["not_verifiable"]
+  },
+  {
+    "id": "11",
+    "title": "Galaxy S22 Ultra — 기종 불일치 대표 사례",
+    "listingText": "갤럭시 S22 Ultra 화이트 512GB 풀박스입니다. 구성은 S25 Ultra 본체, 미사용 정품 스탠딩 커버, 미개봉 클리어 커버, 박스, 보호필름 1장입니다. 사진과 같이 S급이고 번인·찍힘이 없으며 떨어뜨린 적도 없습니다. 자급제입니다.",
+    "images": ["tests/real-market-cases/demo-01-fullset.jpg", "tests/real-market-cases/demo-02-diagnostics.jpg", "tests/real-market-cases/demo-03-corner.jpg"],
+    "expectedVerdicts": ["possible_conflict", "not_verifiable"]
+  },
+  {
+    "id": "12",
+    "title": "Galaxy S20 5G — 액정 파손·간헐 터치",
+    "listingText": "갤럭시 S20 5G입니다. 액정이 파손됐고 깨진 부분은 터치가 잘 되지 않을 때가 있습니다. 카메라는 작동하며 배터리 교체 안내가 나오지만 사용은 가능합니다.",
+    "images": ["tests/real-market-cases/case-12.jpg"],
+    "expectedVerdicts": ["confirmed", "not_verifiable"]
+  }
+]

@@ -1,0 +1,1602 @@
+{
+  "generatedAt": "2026-08-30T12:11:27.160Z",
+  "baseUrl": "http://localhost:3000",
+  "totals": {
+    "cases": 12,
+    "schemaAndSafetyPassed": 12,
+    "expectedVerdicts": 17,
+    "expectedVerdictsPassed": 16,
+    "expectedVerdictRate": 0.9411764705882353
+  },
+  "results": [
+    {
+      "id": "01",
+      "title": "iPhone 13 Pro — 파손 고지와 기능 주장",
+      "ok": true,
+      "elapsedMs": 6275,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "confirmed",
+          "passed": false
+        },
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 0.5,
+      "summary": {
+        "headline": "전면 유리 파손은 사진상 확실히 보이지만, 나머지 기능 주장은 대부분 사진만으로 확인 불가입니다.",
+        "caution": "터치, Face ID, 후면 카메라 줌 범위, 저장용량/정확한 모델명은 작동 확인 사진 또는 영상이 필요합니다.",
+        "counts": {
+          "confirmed": 0,
+          "possible_conflict": 1,
+          "not_verifiable": 3,
+          "unmentioned_visual_issue": 2
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "아이폰 13 Pro 128GB입니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진에서 아이폰 형태와 전면 화면만 보이며, 정확한 모델명(13 Pro)과 저장용량 128GB는 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.94
+        },
+        {
+          "id": "c2",
+          "statement": "전면 유리가 파손됐지만 터치와 화면 표시는 정상입니다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "전면 유리의 심한 균열은 보이지만, 사진만으로 터치 정상 여부는 확인할 수 없습니다. 화면 표시는 켜져 있어 보이나, 표시 기능이 '정상'인지까지는 사진만으로 단정할 수 없습니다.",
+          "box": {
+            "x": 0.18,
+            "y": 0.11,
+            "width": 0.67,
+            "height": 0.74
+          },
+          "confidence": 0.83
+        },
+        {
+          "id": "c3",
+          "statement": "후면 카메라는 이상이 있어 1배~5배만 작동합니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "후면 카메라 동작, 줌 단계별 작동 여부는 이 사진에서 확인되지 않습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c4",
+          "statement": "Face ID와 나머지 기능은 정상입니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "Face ID 및 기타 기능의 정상 동작은 사진만으로 검증할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "전면 유리 균열이 크게 보임",
+          "detail": "상단 중앙부에서 우측 중단까지 방사형/곡선형 균열이 여러 갈래로 퍼져 있습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.23,
+            "y": 0.12,
+            "width": 0.56,
+            "height": 0.55
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "v2",
+          "title": "화면은 점등되어 있음",
+          "detail": "전화 앱 화면이 켜져 있고 UI가 표시됩니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.24,
+            "y": 0.16,
+            "width": 0.52,
+            "height": 0.71
+          },
+          "confidence": 0.92
+        }
+      ],
+      "sellerQuestions": [
+        "전면 화면에서 터치 테스트(모서리 포함)하는 영상이 있나요?",
+        "Face ID 설정/잠금해제 되는 영상 또는 캡처가 있나요?",
+        "후면 카메라 0.5x, 1x, 2x, 3x, 5x 촬영 결과를 각각 보여줄 수 있나요?",
+        "설정 > 일반 > 정보 화면에서 모델명과 저장용량을 확인한 사진이 있나요?"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "iPhone 4S — A급·정품·구성품 주장",
+      "ok": true,
+      "elapsedMs": 3736,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "사진상 아이폰 4S 본체와 박스는 보이지만, 등급·정품·기능 테스트·일련번호 일치 여부는 확인되지 않습니다.",
+        "caution": "케이블/충전기 포함 여부도 사진으로는 판별이 어려워 추가 사진이 필요합니다.",
+        "counts": {
+          "confirmed": 0,
+          "possible_conflict": 0,
+          "not_verifiable": 3,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "A급 아이폰 4S 정품입니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진에서 아이폰 4S 외형으로 보이는 기기와 박스는 확인되지만, ‘A급’ 등급과 정품 여부는 사진만으로 확정하기 어렵습니다.",
+          "box": null,
+          "confidence": 0.54
+        },
+        {
+          "id": "c2",
+          "statement": "유심과 카메라를 테스트했고 정상입니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "유심 인식 및 카메라 작동 여부는 사진 한 장으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.97
+        },
+        {
+          "id": "c3",
+          "statement": "박스와 휴대폰의 일련번호가 같으며",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진에서는 박스와 기기의 일련번호 라벨이 보이지 않아 일치 여부를 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c4",
+          "statement": "케이블은 포함되지만 충전기는 없습니다.",
+          "verdict": "unmentioned_visual_issue",
+          "imageIndex": 1,
+          "evidence": "사진에는 휴대폰과 박스만 보이며 케이블이나 충전기 동봉 여부는 확인되지 않습니다.",
+          "box": null,
+          "confidence": 0.92
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "아이폰 4S로 보이는 본체와 박스가 함께 보임",
+          "detail": "전면 디자인과 박스 측면 이미지로 보아 아이폰 4S 구성품으로 추정되는 본체와 패키지가 함께 촬영되어 있습니다.",
+          "imageIndex": 1,
+          "box": null,
+          "confidence": 0.9
+        },
+        {
+          "id": "v2",
+          "title": "화면이 꺼져 있음",
+          "detail": "기기 화면은 검은 상태로, 작동 화면은 확인되지 않습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.14,
+            "y": 0.2,
+            "width": 0.18,
+            "height": 0.34
+          },
+          "confidence": 0.96
+        }
+      ],
+      "sellerQuestions": [
+        "박스와 본체의 일련번호가 함께 보이도록 라벨 사진을 추가해 주실 수 있나요?",
+        "유심 인식과 카메라 작동을 보여주는 전원 켠 상태 사진 또는 짧은 영상을 받을 수 있을까요?",
+        "구성품으로 케이블이 실제 포함되는지, 충전기는 제외되는지 펼쳐 놓은 사진을 부탁드립니다?"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "iPhone 12 Pro — 후면 유리 파손·배터리·무수리",
+      "ok": true,
+      "elapsedMs": 4369,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "confirmed",
+          "passed": true
+        },
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "모델명과 저장용량은 사진과 일치하지만, 배터리 성능·후면 파손·기능 정상·수리 이력은 사진만으로 확인 불가합니다.",
+        "caution": "전면 사진에 반사광이 있어 화면 흠집 판단이 제한됩니다. 배터리 성능 화면, 후면 사진, 카메라/Face ID 작동 영상이 있으면 더 정확히 확인할 수 있습니다.",
+        "counts": {
+          "confirmed": 1,
+          "possible_conflict": 1,
+          "not_verifiable": 5,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "아이폰 12 Pro 256GB이다.",
+          "verdict": "confirmed",
+          "imageIndex": 1,
+          "evidence": "설정 > 정보 화면에서 모델명이 iPhone 12 Pro로 보이고, 전체 공간이 256GB로 표시됩니다.",
+          "box": {
+            "x": 0.22,
+            "y": 0.18,
+            "width": 0.62,
+            "height": 0.42
+          },
+          "confidence": 0.96
+        },
+        {
+          "id": "c2",
+          "statement": "배터리 성능은 81%이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "제공된 사진은 배터리 성능(최대 용량) 화면이 아니라 정보 화면이라 81% 여부를 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.93
+        },
+        {
+          "id": "c3",
+          "statement": "후면 유리만 파손됐다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진은 전면 화면만 보이며 후면 유리 상태를 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c4",
+          "statement": "카메라가 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "카메라 앱 실행이나 촬영 결과가 보이지 않아 정상 작동 여부를 판단할 수 없습니다.",
+          "box": null,
+          "confidence": 0.97
+        },
+        {
+          "id": "c5",
+          "statement": "Face ID를 포함한 다른 기능이 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "Face ID 작동 여부는 사진 한 장으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c6",
+          "statement": "화면에 번인과 흠집이 없다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "전면 사진에서 눈에 띄는 번인은 잘 보이지 않지만, 화면 우측/하단에 밝은 반사와 촬영 환경 영향이 있어 미세 흠집 유무까지는 확정하기 어렵습니다.",
+          "box": {
+            "x": 0.62,
+            "y": 0.23,
+            "width": 0.24,
+            "height": 0.55
+          },
+          "confidence": 0.56
+        },
+        {
+          "id": "c7",
+          "statement": "수리나 교체 이력이 없다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진만으로 수리/교체 이력은 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "전면 상단 베젤/노치 포함 정상적인 아이폰 12 Pro 외형",
+          "detail": "전면에 노치가 있는 아이폰 12 Pro 형태가 보입니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.21,
+            "y": 0.12,
+            "width": 0.61,
+            "height": 0.76
+          },
+          "confidence": 0.93
+        },
+        {
+          "id": "v2",
+          "title": "화면 우측의 강한 반사",
+          "detail": "우측 중간 영역에 밝은 반사광이 있어 화면 상태 확인을 일부 방해합니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.66,
+            "y": 0.3,
+            "width": 0.19,
+            "height": 0.22
+          },
+          "confidence": 0.95
+        }
+      ],
+      "sellerQuestions": [
+        "배터리 성능 81%를 보여주는 화면 캡처를 추가로 올려주실 수 있나요?",
+        "후면 유리 상태를 확인할 수 있는 정면 사진을 부탁드립니다.",
+        "카메라 촬영 테스트와 Face ID 인식 테스트 영상을 제공해 주실 수 있나요?",
+        "설정 > 일반 > 정보의 부품 및 서비스 이력(수리/교체 내역) 화면이 있으면 함께 보여주실 수 있나요?",
+        "화면 반사 없이 촬영한 사진이 있으면 흠집 확인에 도움이 됩니다."
+      ]
+    },
+    {
+      "id": "04",
+      "title": "iPhone SE 1세대 — 새것 같은 외관·사설 배터리",
+      "ok": true,
+      "elapsedMs": 4827,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "외관은 비교적 양호해 보이지만, 기능·구성품 주장은 사진만으로 대부분 확인 불가입니다.",
+        "caution": "배터리 상태, Touch ID, AirDrop, 카메라 정상 여부는 실사용 확인이 필요하며, 구성품(케이스/케이블)은 사진에 보이지 않습니다.",
+        "counts": {
+          "confirmed": 0,
+          "possible_conflict": 1,
+          "not_verifiable": 5,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "아이폰 SE 1세대 128GB 실버이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "후면 디자인이 아이폰 SE 계열로 보이지만, 저장용량(128GB)은 사진만으로 확인할 수 없습니다. 정확한 모델/색상도 사진만으로 단정하기 어렵습니다.",
+          "box": {
+            "x": 0.29,
+            "y": 0.21,
+            "width": 0.4,
+            "height": 0.5
+          },
+          "confidence": 0.71
+        },
+        {
+          "id": "c2",
+          "statement": "흠집과 찍힘이 거의 없는 새것 같은 외관이다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "후면은 전반적으로 깨끗해 보이지만, 가장자리/모서리 쪽에 미세한 사용감 가능성이 보여 '거의 없는' 수준은 사진 한 장만으로 단정하기 어렵습니다.",
+          "box": {
+            "x": 0.28,
+            "y": 0.19,
+            "width": 0.46,
+            "height": 0.58
+          },
+          "confidence": 0.63
+        },
+        {
+          "id": "c3",
+          "statement": "배터리는 사설 제품으로 교체해 100%이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "배터리 교체 여부나 배터리 성능 100%는 사진으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c4",
+          "statement": "Touch ID가 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "Touch ID 작동 여부는 화면/설정/실사용 영상이 없어 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c5",
+          "statement": "AirDrop이 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "AirDrop 기능 정상 여부는 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c6",
+          "statement": "카메라가 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "후면 카메라 렌즈는 보이지만 촬영/초점/플래시 작동 등 정상 여부는 사진만으로 확인할 수 없습니다.",
+          "box": {
+            "x": 0.52,
+            "y": 0.12,
+            "width": 0.18,
+            "height": 0.16
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "c7",
+          "statement": "케이스와 케이블을 포함한다.",
+          "verdict": "unmentioned_visual_issue",
+          "imageIndex": 1,
+          "evidence": "첨부된 사진에는 케이스나 케이블이 보이지 않습니다.",
+          "box": null,
+          "confidence": 0.9
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "후면은 대체로 깨끗해 보임",
+          "detail": "사진상 후면 패널은 큰 파손이나 심한 스크래치는 눈에 띄지 않습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.28,
+            "y": 0.2,
+            "width": 0.46,
+            "height": 0.57
+          },
+          "confidence": 0.8
+        },
+        {
+          "id": "v2",
+          "title": "모서리/측면의 세부 상태는 제한적으로 보임",
+          "detail": "기기 각도가 있고 해상도상 가장자리 미세 흠집 여부는 확정하기 어렵습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.27,
+            "y": 0.18,
+            "width": 0.49,
+            "height": 0.6
+          },
+          "confidence": 0.66
+        }
+      ],
+      "sellerQuestions": [
+        "배터리 성능 100% 화면과 교체 내역을 캡처로 보여주실 수 있나요?",
+        "Touch ID, 카메라, AirDrop 동작을 확인한 사진이나 짧은 영상을 받을 수 있을까요?",
+        "케이스와 케이블 실물 사진을 추가로 보여주실 수 있나요?",
+        "기기 저장용량이 128GB인지 설정 > 일반 > 정보 화면으로 확인 가능할까요?"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "iPhone 6S Plus — 흰 점 고지·기능 정상",
+      "ok": true,
+      "elapsedMs": 5445,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "사진상 후면 외관은 확인되지만, 판매글의 기능·용량·배터리 주장은 대부분 사진으로 검증되지 않습니다.",
+        "caution": "화면 상태, 배터리 91%, 카메라/Touch ID/터치/AirDrop 정상 여부는 추가 설정 화면 또는 작동 영상이 필요합니다. 후면에는 상단부 마모와 작은 흠집처럼 보이는 부분이 있습니다.",
+        "counts": {
+          "confirmed": 0,
+          "possible_conflict": 0,
+          "not_verifiable": 8,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "아이폰 6S Plus 16GB이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "후면 외관만 보이며, 6S Plus 모델명이나 16GB 저장용량은 사진에서 확인되지 않습니다.",
+          "box": null,
+          "confidence": 0.96
+        },
+        {
+          "id": "c2",
+          "statement": "배터리 91%이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "배터리 성능 수치는 설정 화면 등 정보가 필요하며 현재 사진으로는 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c3",
+          "statement": "전후면 카메라가 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "카메라 렌즈 외관은 보이지만 촬영/작동 정상 여부는 사진만으로 판단할 수 없습니다.",
+          "box": {
+            "x": 0.34,
+            "y": 0.16,
+            "width": 0.14,
+            "height": 0.12
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "c4",
+          "statement": "동영상 촬영이 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "동영상 촬영 기능은 정지 사진으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c5",
+          "statement": "AirDrop이 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "AirDrop 기능 작동 여부는 설정/연결 화면이나 실제 작동 영상이 필요합니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c6",
+          "statement": "Touch ID가 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "Touch ID 작동 여부는 사진으로 확인할 수 없습니다.",
+          "box": {
+            "x": 0.36,
+            "y": 0.14,
+            "width": 0.12,
+            "height": 0.1
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "c7",
+          "statement": "터치가 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "터치 반응은 화면 작동 영상이나 테스트 화면이 있어야 확인 가능합니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c8",
+          "statement": "화면은 깨끗하지만 흰 점 두 곳이 있다.",
+          "verdict": "unmentioned_visual_issue",
+          "imageIndex": 1,
+          "evidence": "제공된 사진은 후면만 보여서 화면 상태나 흰 점 여부를 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.93
+        },
+        {
+          "id": "c9",
+          "statement": "기기만 제공된다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "구성품 포함 여부는 사진만으로 확정할 수 없습니다.",
+          "box": null,
+          "confidence": 0.94
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "후면 상단부 도장/마모 흔적",
+          "detail": "카메라 주변과 상단 테두리 부근에 마모 또는 벗겨짐처럼 보이는 흔적이 있습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.37,
+            "y": 0.08,
+            "width": 0.27,
+            "height": 0.16
+          },
+          "confidence": 0.77
+        },
+        {
+          "id": "v2",
+          "title": "후면 하단 모서리 미세 흠집",
+          "detail": "하단 우측 모서리 근처에 작은 흠집처럼 보이는 점이 있습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.64,
+            "y": 0.79,
+            "width": 0.08,
+            "height": 0.1
+          },
+          "confidence": 0.72
+        }
+      ],
+      "sellerQuestions": [
+        "배터리 성능 상태가 보이는 설정 화면 사진을 추가로 올려주실 수 있나요?",
+        "전후면 카메라, 동영상 촬영, Touch ID, 터치, AirDrop이 실제로 동작하는 짧은 영상이 있나요?",
+        "화면의 흰 점 두 곳이 보이도록 켠 상태 사진을 추가해 주실 수 있나요?",
+        "구성품이 정말 기기만인지 확인할 수 있는 사진이나 설명을 부탁드립니다."
+      ]
+    },
+    {
+      "id": "06",
+      "title": "iPhone 13 — 깨끗한 화면·일상 사용감",
+      "ok": true,
+      "elapsedMs": 5100,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "모델/색상은 대체로 맞아 보이지만, 기능 정상 여부는 사진으로 확인 불가이고 외관은 약한 사용 흔적이 보입니다.",
+        "caution": "배터리 수치, 화면 상태, AirDrop/Face ID/터치 정상 여부는 사진만으로 판정할 수 없습니다. 외관은 경미한 마모 가능성이 있어 추가 근접 사진과 전면 화면, 설정의 배터리 화면, 기능 테스트 영상이 필요합니다.",
+        "counts": {
+          "confirmed": 1,
+          "possible_conflict": 1,
+          "not_verifiable": 6,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "아이폰 13 128GB 미드나이트이다.",
+          "verdict": "confirmed",
+          "imageIndex": 1,
+          "evidence": "후면 디자인과 듀얼 카메라 배치가 아이폰 13 계열과 일치하고, 색상도 짙은 남색/블랙 계열로 보입니다. 다만 저장용량은 사진만으로 확인 불가입니다.",
+          "box": {
+            "x": 0.14,
+            "y": 0.12,
+            "width": 0.46,
+            "height": 0.68
+          },
+          "confidence": 0.72
+        },
+        {
+          "id": "c2",
+          "statement": "배터리 86%이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "배터리 성능 최대치 수치는 사진에서 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c3",
+          "statement": "화면은 깨끗하다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "화면 전면이 보이지 않아 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.96
+        },
+        {
+          "id": "c4",
+          "statement": "외관에는 보통의 사용감이 있다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "후면 하단과 모서리 쪽에 미세한 스크래치/마모처럼 보이는 부분이 있어 '보통의 사용감'보다 적거나 다소 더 있어 보일 수 있습니다. 다만 빛 반사와 사진 해상도 영향 가능성이 있습니다.",
+          "box": {
+            "x": 0.14,
+            "y": 0.71,
+            "width": 0.22,
+            "height": 0.16
+          },
+          "confidence": 0.56
+        },
+        {
+          "id": "c5",
+          "statement": "카메라가 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "카메라 모듈 외관은 보이지만 실제 촬영/초점/손떨림 보정 동작은 사진만으로 확인할 수 없습니다.",
+          "box": {
+            "x": 0.4,
+            "y": 0.12,
+            "width": 0.18,
+            "height": 0.16
+          },
+          "confidence": 0.94
+        },
+        {
+          "id": "c6",
+          "statement": "AirDrop이 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": null,
+          "evidence": "무선 전송 기능은 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c7",
+          "statement": "생체 인증이 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": null,
+          "evidence": "Face ID 등 생체 인증 동작은 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c8",
+          "statement": "터치 등 모든 기능이 정상이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": null,
+          "evidence": "터치, 센서, 스피커, 통신 등 기능 정상 여부는 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "후면 유리/모서리의 미세한 사용 흔적",
+          "detail": "후면 하단과 가장자리 부근에 경미한 스크래치 또는 마모처럼 보이는 흔적이 있습니다. 강한 손상으로 보이진 않지만 외관 사용감은 확인됩니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.14,
+            "y": 0.71,
+            "width": 0.22,
+            "height": 0.16
+          },
+          "confidence": 0.68
+        },
+        {
+          "id": "v2",
+          "title": "후면 카메라 모듈 외관 양호",
+          "detail": "카메라 렌즈와 모듈 주변에 눈에 띄는 파손은 보이지 않습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.41,
+            "y": 0.12,
+            "width": 0.18,
+            "height": 0.16
+          },
+          "confidence": 0.83
+        }
+      ],
+      "sellerQuestions": [
+        "설정 > 배터리 > 배터리 성능 최대치 화면을 추가로 보여주실 수 있나요?",
+        "전면 화면 상태와 전체 테두리, 모서리 근접 사진을 받을 수 있을까요?",
+        "Face ID, 터치, 후면/전면 카메라, 스피커, 마이크, Wi‑Fi/AirDrop 테스트 영상을 확인할 수 있을까요?",
+        "저장용량 128GB와 모델명(iPhone 13) 확인 화면도 보여주실 수 있나요?"
+      ]
+    },
+    {
+      "id": "07",
+      "title": "iPhone 13 mini — SS급·최상품과 생활 흠집",
+      "ok": true,
+      "elapsedMs": 4474,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "사진상 전면 점등 상태는 보이나, 모델/용량/배터리/수리·해지 이력은 사진만으로 확인되지 않습니다.",
+        "caution": "후면 흠집, 잔기스, 배터리 성능, 정상 해지, 수리 이력, 기능 불량 여부는 추가 사진이나 설정 화면/작동 영상이 필요합니다.",
+        "counts": {
+          "confirmed": 0,
+          "possible_conflict": 1,
+          "not_verifiable": 5,
+          "unmentioned_visual_issue": 2
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "아이폰 13 mini 128GB 미드나이트이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진에 아이폰 형태는 보이지만, 정확한 모델명(13 mini), 저장용량 128GB, 색상 미드나이트는 사진만으로 확정하기 어렵습니다.",
+          "box": {
+            "x": 0.18,
+            "y": 0.13,
+            "width": 0.57,
+            "height": 0.82
+          },
+          "confidence": 0.63
+        },
+        {
+          "id": "c2",
+          "statement": "배터리 성능은 76%이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "배터리 성능 수치가 화면에 표시되지 않아 사진으로 확인할 수 없습니다.",
+          "box": {
+            "x": 0.18,
+            "y": 0.13,
+            "width": 0.57,
+            "height": 0.82
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "c3",
+          "statement": "최상품 SS급이다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "전면 사진상 화면 보호 필름 여부나 미세 스크래치까지는 판단이 어렵지만, 단일 사진만으로 'SS급'을 뒷받침하기에는 정보가 부족합니다.",
+          "box": {
+            "x": 0.18,
+            "y": 0.13,
+            "width": 0.57,
+            "height": 0.82
+          },
+          "confidence": 0.71
+        },
+        {
+          "id": "c4",
+          "statement": "일상적인 잔기스와 후면 흠집이 조금 있다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "제공된 사진은 전면 위주이고 후면은 보이지 않으며, 전면의 미세한 기스도 이 사진만으로 명확히 판별하기 어렵습니다.",
+          "box": {
+            "x": 0.18,
+            "y": 0.13,
+            "width": 0.57,
+            "height": 0.82
+          },
+          "confidence": 0.92
+        },
+        {
+          "id": "c5",
+          "statement": "정상 해지됐다.",
+          "verdict": "not_verifiable",
+          "imageIndex": null,
+          "evidence": "정상 해지 여부는 사진으로 확인할 수 있는 정보가 아닙니다.",
+          "box": null,
+          "confidence": 0.99
+        },
+        {
+          "id": "c6",
+          "statement": "수리 이력과 기능 불량은 없다.",
+          "verdict": "not_verifiable",
+          "imageIndex": null,
+          "evidence": "수리 이력, 내부 기능 불량 여부는 사진만으로 확인할 수 없습니다. 기능 확인 영상이나 설정/진단 화면이 필요합니다.",
+          "box": null,
+          "confidence": 0.99
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "전면 화면 점등 상태",
+          "detail": "기기가 켜져 있고 잠금화면이 표시되어 있어 최소한 전원은 들어오는 것으로 보입니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.21,
+            "y": 0.15,
+            "width": 0.54,
+            "height": 0.79
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "v2",
+          "title": "단일 전면 사진만 제공",
+          "detail": "후면, 측면, 하단 포트, 카메라 렌즈, 설정/정보 화면이 보이지 않아 외관·사양·상태 검증이 제한됩니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.16,
+            "y": 0.12,
+            "width": 0.61,
+            "height": 0.84
+          },
+          "confidence": 0.93
+        }
+      ],
+      "sellerQuestions": [
+        "설정 > 일반 > 정보 화면(모델명, 용량, 배터리 성능)을 추가로 찍어주실 수 있나요?",
+        "후면 전체, 좌우 측면, 상하단, 카메라 렌즈 근접 사진을 부탁드립니다.",
+        "배터리 성능 최대치 76%를 보여주는 화면을 추가로 제공해 주실 수 있나요?",
+        "통화, 와이파이, 카메라, 스피커, 충전 테스트 영상이 있을까요?",
+        "정상 해지 및 수리 이력 확인이 가능한 자료가 있나요?"
+      ]
+    },
+    {
+      "id": "08",
+      "title": "iPhone 8 — A급·무잔상·배터리 교체",
+      "ok": true,
+      "elapsedMs": 4392,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "외형상 레드 아이폰 8로 보이지만, 배터리·화면·기능 정상 여부는 사진만으로 확인되지 않습니다.",
+        "caution": "후면만 있는 사진이라 화면 상태, 배터리 교체 여부, 잔상, 카메라/생체 인증 정상 동작은 추가 사진이나 작동 영상이 필요합니다.",
+        "counts": {
+          "confirmed": 1,
+          "possible_conflict": 1,
+          "not_verifiable": 4,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "아이폰 8 64GB 레드입니다.",
+          "verdict": "confirmed",
+          "imageIndex": 1,
+          "evidence": "후면 디자인이 아이폰 8 계열의 유리 후면/단일 카메라 구성으로 보이며, 레드(Product) 색상으로 보입니다. 다만 저장용량은 사진만으로 확인 불가합니다.",
+          "box": {
+            "x": 0.34,
+            "y": 0.1,
+            "width": 0.42,
+            "height": 0.84
+          },
+          "confidence": 0.92
+        },
+        {
+          "id": "c2",
+          "statement": "사설 배터리로 교체해 100%입니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "배터리 교체 여부와 배터리 성능 100%는 사진에서 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c3",
+          "statement": "A급, 무잔상입니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "잔상 여부와 A급 등급은 화면 점등 사진이나 상세 상태 확인이 필요합니다. 현재 사진은 후면만 보여 판단할 수 없습니다.",
+          "box": null,
+          "confidence": 0.97
+        },
+        {
+          "id": "c4",
+          "statement": "화면은 깨끗합니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "화면이 보이지 않아 스크래치, 번인, 균열 여부를 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c5",
+          "statement": "프레임과 후면에는 약간의 사용감이 있습니다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "후면은 큰 파손은 보이지 않지만, 사진상으로는 사용감이 많아 보일 정도의 명확한 흠집은 잘 확인되지 않습니다. 다만 미세 스크래치/생활기스는 사진만으로 단정하기 어렵습니다.",
+          "box": {
+            "x": 0.33,
+            "y": 0.1,
+            "width": 0.44,
+            "height": 0.83
+          },
+          "confidence": 0.62
+        },
+        {
+          "id": "c6",
+          "statement": "카메라와 생체 인증 등 기능은 정상입니다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "카메라 촬영 기능과 생체 인증(지문) 정상 여부는 사진만으로 확인할 수 없습니다.",
+          "box": {
+            "x": 0.2,
+            "y": 0.1,
+            "width": 0.25,
+            "height": 0.22
+          },
+          "confidence": 0.99
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "후면 색상 및 모델 외형",
+          "detail": "레드 색상의 아이폰 8 계열 후면으로 보이며, 단일 후면 카메라와 유리 후면이 확인됩니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.34,
+            "y": 0.1,
+            "width": 0.42,
+            "height": 0.84
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "v2",
+          "title": "후면 표면 상태",
+          "detail": "후면에 큰 균열은 보이지 않지만, 작은 먼지/미세 점처럼 보이는 요소가 있을 수 있어 사진만으로 흠집 여부를 확정하기는 어렵습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.34,
+            "y": 0.1,
+            "width": 0.42,
+            "height": 0.84
+          },
+          "confidence": 0.71
+        }
+      ],
+      "sellerQuestions": [
+        "전면 화면이 켜진 사진과 전체 화면 근접 사진을 추가로 받을 수 있나요?",
+        "배터리 성능(설정 화면)과 배터리 교체 관련 내역을 확인할 수 있나요?",
+        "카메라 촬영, 지문 인식이 정상 동작하는 짧은 영상이 있나요?",
+        "기기 저장용량을 확인할 수 있는 정보(설정 > 일반 > 정보) 사진을 받을 수 있나요?"
+      ]
+    },
+    {
+      "id": "09",
+      "title": "Galaxy S23+ — 중앙 빛샘 고지",
+      "ok": true,
+      "elapsedMs": 3841,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "confirmed",
+          "passed": true
+        },
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "사진상 외관은 대체로 양호하지만, 빛샘·기능 정상·정확한 모델/용량 정보는 확인이 어렵습니다.",
+        "caution": "화면 중앙의 녹색 부분은 빛샘인지 오염/반사인지 불명확합니다. 추가로 검은 배경 화면 사진과 터치/기능 확인 영상이 있으면 더 정확히 판단할 수 있습니다.",
+        "counts": {
+          "confirmed": 1,
+          "possible_conflict": 1,
+          "not_verifiable": 3,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "갤럭시 S23+ 512GB 자급제다",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진에 기기 정보 화면 일부가 보이지만 모델명(S23+), 정확한 저장용량 512GB, 자급제 여부를 확인할 수 있는 정보가 보이지 않습니다.",
+          "box": null,
+          "confidence": 0.21
+        },
+        {
+          "id": "c2",
+          "statement": "디스플레이 중앙에 빛샘이 있다",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "화면 중앙 부근에 녹색 얼룩/점이 보이지만, 빛샘인지 화면 반사나 오염인지 사진만으로 단정하기 어렵고 중앙에 전형적인 빛샘 형태로 명확히 보이지 않습니다.",
+          "box": {
+            "x": 0.505,
+            "y": 0.542,
+            "width": 0.082,
+            "height": 0.082
+          },
+          "confidence": 0.34
+        },
+        {
+          "id": "c3",
+          "statement": "빛샘이 더 커지거나 번지지는 않았다",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "시간 경과에 따른 변화 여부는 단일 사진으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c4",
+          "statement": "외관은 깨끗하다",
+          "verdict": "confirmed",
+          "imageIndex": 1,
+          "evidence": "전면 기준으로 눈에 띄는 파손, 큰 스크래치, 균열은 보이지 않으며 전체적으로 양호해 보입니다. 다만 세부 미세 흠집은 판별이 어렵습니다.",
+          "box": {
+            "x": 0.12,
+            "y": 0.14,
+            "width": 0.76,
+            "height": 0.74
+          },
+          "confidence": 0.67
+        },
+        {
+          "id": "c5",
+          "statement": "터치와 기능은 정상이다",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진은 설정/진단 화면을 보여주지만 터치 동작, 통화, 카메라, 스피커 등 기능 정상 여부는 직접 확인되지 않습니다.",
+          "box": null,
+          "confidence": 0.95
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "전면 화면 중앙 부근의 녹색 얼룩/점",
+          "detail": "화면 중앙 오른쪽에 녹색의 작은 얼룩처럼 보이는 부분이 있습니다. 반사나 오염일 가능성도 있어 확정은 어렵습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.529,
+            "y": 0.53,
+            "width": 0.065,
+            "height": 0.065
+          },
+          "confidence": 0.49
+        },
+        {
+          "id": "v2",
+          "title": "전면 베젤과 화면 상태 양호",
+          "detail": "프레임과 화면 전면에서 큰 파손이나 균열은 관찰되지 않습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.11,
+            "y": 0.12,
+            "width": 0.78,
+            "height": 0.77
+          },
+          "confidence": 0.72
+        }
+      ],
+      "sellerQuestions": [
+        "검은 배경에서 화면 중앙과 전체를 찍은 사진이 있나요?",
+        "터치 테스트와 화면 밝기 조절이 보이는 짧은 영상이 있나요?",
+        "설정 화면에서 모델명과 저장용량(512GB) 확인 사진을 보내주실 수 있나요?",
+        "자급제 여부를 확인할 수 있는 구매 이력 또는 통신사 개통 흔적이 없는지 확인 가능한 사진이 있나요?"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Galaxy S26 — A급·미사용 풀박스",
+      "ok": true,
+      "elapsedMs": 8020,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "사진상 본체 전면은 비교적 양호해 보이지만, 모델명·용량·해지 여부·박스/케이스 동봉 여부는 확인되지 않습니다.",
+        "caution": "사진 한 장만으로는 판매글의 핵심 주장 대부분을 검증하기 어렵습니다. 후면, 측면, 설정의 기기 정보 화면, 통신사/IMEI 화면, 박스·구성품 사진 또는 작동 영상이 필요합니다.",
+        "counts": {
+          "confirmed": 0,
+          "possible_conflict": 1,
+          "not_verifiable": 3,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "갤럭시 S26 256GB이다",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진에서 삼성 안드로이드 폰의 전면 화면은 보이지만, 정확한 모델명과 저장용량(256GB)은 확인되지 않습니다.",
+          "box": null,
+          "confidence": 0.18
+        },
+        {
+          "id": "c2",
+          "statement": "정상 해지 공기계이다",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "통신 해지 여부, 공기계 여부는 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.12
+        },
+        {
+          "id": "c3",
+          "statement": "상태가 매우 좋은 A급이다",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "전면상 큰 파손은 뚜렷하지 않지만, 미세 스크래치·찍힘 여부나 전체 상태 등급은 사진 한 장만으로 단정하기 어렵습니다.",
+          "box": {
+            "x": 0.2,
+            "y": 0.17,
+            "width": 0.6,
+            "height": 0.72
+          },
+          "confidence": 0.41
+        },
+        {
+          "id": "c4",
+          "statement": "구성품은 미사용 풀박스이다",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "박스나 구성품이 사진에 보이지 않아 미사용 풀박스 여부를 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.1
+        },
+        {
+          "id": "c5",
+          "statement": "사용하던 케이스도 함께 제공한다",
+          "verdict": "unmentioned_visual_issue",
+          "imageIndex": 1,
+          "evidence": "사진에는 휴대폰 본체만 보이고, 케이스 동봉 여부는 보이지 않습니다.",
+          "box": null,
+          "confidence": 0.22
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "전면 디스플레이 정상 점등",
+          "detail": "화면이 켜져 있고 홈 화면이 표시되어 있습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.28,
+            "y": 0.21,
+            "width": 0.45,
+            "height": 0.65
+          },
+          "confidence": 0.93
+        },
+        {
+          "id": "v2",
+          "title": "전면 카메라 홀 노출",
+          "detail": "상단 중앙 펀치홀 전면 카메라가 보입니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.45,
+            "y": 0.19,
+            "width": 0.11,
+            "height": 0.09
+          },
+          "confidence": 0.97
+        },
+        {
+          "id": "v3",
+          "title": "전면 베젤과 모서리 상태 양호해 보임",
+          "detail": "사진상 큰 균열이나 심한 찍힘은 보이지 않습니다. 다만 세부 스크래치는 확인 한계가 있습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.22,
+            "y": 0.14,
+            "width": 0.57,
+            "height": 0.76
+          },
+          "confidence": 0.68
+        }
+      ],
+      "sellerQuestions": [
+        "설정 > 휴대전화 정보 화면에서 모델명과 저장용량이 보이게 찍어주실 수 있나요?",
+        "통신 해지/공기계 여부를 확인할 수 있는 화면(예: 유심 인식 상태, 통신사 정보)도 보여주실 수 있나요?",
+        "박스와 구성품 전체 사진, 그리고 케이스가 포함된 사진을 추가로 올려주실 수 있나요?",
+        "후면/측면/모서리 클로즈업 사진과 화면 점검용 작동 영상도 부탁드립니다."
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Galaxy S22 Ultra — 기종 불일치 대표 사례",
+      "ok": true,
+      "elapsedMs": 9863,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "possible_conflict",
+          "passed": true
+        },
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "사진상 구성품 일부는 확인되지만, 모델 표기 불일치와 외관의 경미한 흠집 의심 부분이 있어 일부 주장은 보수적으로 봐야 합니다.",
+        "caution": "낙하 여부, 자급제 여부, 미개봉/미사용 여부, 번인 유무는 사진만으로 확정할 수 없습니다. 추가로 외관 근접 사진과 화면 단색 테스트 영상이 있으면 더 정확히 볼 수 있습니다.",
+        "counts": {
+          "confirmed": 0,
+          "possible_conflict": 5,
+          "not_verifiable": 2,
+          "unmentioned_visual_issue": 3
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "갤럭시 S22 Ultra 화이트 512GB 모델이다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "사진의 박스/기기에는 Galaxy S22 Ultra로 보이는 표기가 있으나, 본문에 ‘S25 Ultra 본체’라는 다른 문구가 있어 모델 주장이 서로 충돌합니다. 저장용량 512GB는 사진에서 확인되지 않습니다.",
+          "box": {
+            "x": 0.08,
+            "y": 0.45,
+            "width": 0.44,
+            "height": 0.5
+          },
+          "confidence": 0.82
+        },
+        {
+          "id": "c2",
+          "statement": "풀박스 구성이다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "박스와 기기, 케이스류는 보이나 충전기/케이블 등 전체 구성품이 모두 있는지는 사진만으로 확정하기 어렵습니다. 또한 본문 구성품 설명과 사진 배치가 완전히 일치하는지는 불명확합니다.",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1
+          },
+          "confidence": 0.54
+        },
+        {
+          "id": "c3",
+          "statement": "구성은 본체, 미사용 정품 스탠딩 커버, 미개봉 클리어 커버, 박스, 보호필름 1장이다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 1,
+          "evidence": "클리어 커버 박스, 스탠딩 커버 박스, 본체, S22 Ultra 박스는 보입니다. 다만 보호필름 1장은 개봉 여부나 정확한 수량을 사진만으로 확인하기 어렵고, ‘미개봉/미사용’ 여부도 사진만으로 단정하기 어렵습니다.",
+          "box": {
+            "x": 0.02,
+            "y": 0.02,
+            "width": 0.92,
+            "height": 0.93
+          },
+          "confidence": 0.66
+        },
+        {
+          "id": "c4",
+          "statement": "사진과 같이 S급이다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 3,
+          "evidence": "전반적으로 큰 파손은 뚜렷하지 않지만, 사진 3의 하단 모서리/프레임 부근에 마모 또는 흠집처럼 보이는 부분이 있어 ‘S급’으로 단정하기에는 애매합니다.",
+          "box": {
+            "x": 0.42,
+            "y": 0.55,
+            "width": 0.26,
+            "height": 0.32
+          },
+          "confidence": 0.71
+        },
+        {
+          "id": "c5",
+          "statement": "번인과 찍힘이 없다.",
+          "verdict": "possible_conflict",
+          "imageIndex": 2,
+          "evidence": "사진 2는 화면 진단 화면이라 번인 확인에는 충분하지 않고, 찍힘은 사진 3에서 가장자리 마모/흠집처럼 보이는 부분이 있어 완전 무흠집으로 보기는 어렵습니다.",
+          "box": {
+            "x": 0.25,
+            "y": 0.72,
+            "width": 0.5,
+            "height": 0.22
+          },
+          "confidence": 0.73
+        },
+        {
+          "id": "c6",
+          "statement": "떨어뜨린 적이 없다.",
+          "verdict": "not_verifiable",
+          "imageIndex": null,
+          "evidence": "낙하 여부는 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c7",
+          "statement": "자급제다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 2,
+          "evidence": "사진 2의 진단 화면으로는 자급제 여부(구매처/통신사 이력)를 확인할 수 없습니다.",
+          "box": {
+            "x": 0.2,
+            "y": 0.05,
+            "width": 0.6,
+            "height": 0.9
+          },
+          "confidence": 0.97
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "본문의 모델 표기 불일치",
+          "detail": "판매글에는 ‘갤럭시 S22 Ultra’와 함께 ‘S25 Ultra 본체’라는 문구가 같이 있어 모델 설명이 서로 맞지 않습니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.02,
+            "y": 0.02,
+            "width": 0.96,
+            "height": 0.96
+          },
+          "confidence": 0.95
+        },
+        {
+          "id": "v2",
+          "title": "프레임/모서리 부근 마모처럼 보이는 부분",
+          "detail": "사진 3의 하단 모서리와 측면 접합부 주변에 흠집 또는 마모로 보이는 부분이 관찰됩니다. 빛 반사 가능성도 있어 단정은 어렵습니다.",
+          "imageIndex": 3,
+          "box": {
+            "x": 0.44,
+            "y": 0.48,
+            "width": 0.18,
+            "height": 0.18
+          },
+          "confidence": 0.77
+        },
+        {
+          "id": "v3",
+          "title": "화면 진단 화면은 보이나 번인 판정은 어려움",
+          "detail": "사진 2는 삼성 자가진단 화면으로 보이지만, 일반적인 번인 확인용 패턴이나 장시간 단색 화면이 아니라 번인 유무를 확인하기엔 부족합니다.",
+          "imageIndex": 2,
+          "box": {
+            "x": 0.18,
+            "y": 0.03,
+            "width": 0.64,
+            "height": 0.92
+          },
+          "confidence": 0.9
+        }
+      ],
+      "sellerQuestions": [
+        "실제 판매 모델이 S22 Ultra인가요, 아니면 본문에 적힌 S25 Ultra 표기는 오타인가요?",
+        "512GB 저장용량을 확인할 수 있는 설정 화면 또는 박스 라벨 사진을 추가해 주실 수 있나요?",
+        "화면 단색(흰색/회색/검정) 테스트 영상과 밝기 최대 상태 사진을 제공해 주실 수 있나요?",
+        "모서리/프레임 흠집이 보이는 부분의 근접 사진을 추가로 보여주실 수 있나요?",
+        "자급제 구매 증빙이나 통신사 개통 이력 확인 화면이 있으면 함께 보여주실 수 있나요?"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Galaxy S20 5G — 액정 파손·간헐 터치",
+      "ok": true,
+      "elapsedMs": 3714,
+      "mode": "live",
+      "schemaPassed": true,
+      "verdictChecks": [
+        {
+          "verdict": "confirmed",
+          "passed": true
+        },
+        {
+          "verdict": "not_verifiable",
+          "passed": true
+        }
+      ],
+      "forbidden": [],
+      "score": 1,
+      "summary": {
+        "headline": "사진상 전면 유리 파손은 확인되지만, 기능 관련 문구는 사진으로 검증되지 않습니다.",
+        "caution": "터치 불량, 카메라 작동, 배터리 안내 문구는 별도 작동 사진이나 영상이 필요합니다.",
+        "counts": {
+          "confirmed": 1,
+          "possible_conflict": 0,
+          "not_verifiable": 4,
+          "unmentioned_visual_issue": 1
+        }
+      },
+      "claims": [
+        {
+          "id": "c1",
+          "statement": "갤럭시 S20 5G이다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "사진에서 전면만 보이며 기기명/모델명 표기는 확인되지 않습니다.",
+          "box": null,
+          "confidence": 0.58
+        },
+        {
+          "id": "c2",
+          "statement": "액정이 파손됐다.",
+          "verdict": "confirmed",
+          "imageIndex": 1,
+          "evidence": "우측 상단 모서리와 우측 가장자리를 따라 유리 균열이 뚜렷하게 보입니다.",
+          "box": {
+            "x": 0.78,
+            "y": 0.05,
+            "width": 0.18,
+            "height": 0.48
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "c3",
+          "statement": "깨진 부분은 터치가 잘 되지 않을 때가 있다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "터치 불량은 사진만으로 확인할 수 없습니다.",
+          "box": {
+            "x": 0.78,
+            "y": 0.05,
+            "width": 0.18,
+            "height": 0.48
+          },
+          "confidence": 0.99
+        },
+        {
+          "id": "c4",
+          "statement": "카메라는 작동한다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "카메라 촬영 동작이나 앱 실행 화면이 없어 사진으로는 확인되지 않습니다.",
+          "box": null,
+          "confidence": 0.98
+        },
+        {
+          "id": "c5",
+          "statement": "배터리 교체 안내가 나오지만 사용은 가능하다.",
+          "verdict": "not_verifiable",
+          "imageIndex": 1,
+          "evidence": "배터리 상태/안내 메시지와 사용 가능 여부는 사진만으로 확인할 수 없습니다.",
+          "box": null,
+          "confidence": 0.99
+        }
+      ],
+      "visualFindings": [
+        {
+          "id": "v1",
+          "title": "우측 상단 및 우측 측면 균열",
+          "detail": "전면 유리 우측 상단에서 시작해 우측 가장자리로 이어지는 균열이 보입니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.78,
+            "y": 0.05,
+            "width": 0.18,
+            "height": 0.48
+          },
+          "confidence": 0.98
+        },
+        {
+          "id": "v2",
+          "title": "전면 상단 베젤/모서리 상태",
+          "detail": "상단 중앙 카메라 홀과 상단 베젤은 보이며, 전체 전면은 켜진 상태입니다.",
+          "imageIndex": 1,
+          "box": {
+            "x": 0.08,
+            "y": 0,
+            "width": 0.84,
+            "height": 0.12
+          },
+          "confidence": 0.87
+        }
+      ],
+      "sellerQuestions": [
+        "터치 불량이 있는 부분을 실제로 눌러보는 영상이 있나요?",
+        "카메라 앱 실행 후 전/후면 촬영 영상이나 사진을 추가로 보여주실 수 있나요?",
+        "배터리 교체 안내 메시지가 뜨는 화면을 캡처해 주실 수 있나요?",
+        "모델명 확인을 위해 설정 > 휴대전화 정보 화면 사진을 받을 수 있을까요?"
+      ]
+    }
+  ]
+}
