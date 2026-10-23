@@ -30,6 +30,10 @@ const verdicts: Record<Verdict, { label: string; shortLabel: string; tone: strin
 type AppState = 'ready' | 'analyzing' | 'success' | 'error';
 
 export default function Home() {
+  return <SecondEyeApp />;
+}
+
+export function SecondEyeApp({ demoOnly = false, assetBase = '/' }: { demoOnly?: boolean; assetBase?: string }) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [listingText, setListingText] = useState(demoListing);
   const [files, setFiles] = useState<File[]>([]);
@@ -51,9 +55,10 @@ export default function Home() {
     return () => window.clearInterval(timer);
   }, [state]);
 
-  const shownImages = useMemo(() => previews.length ? previews.map((src) => ({ src, alt: '업로드한 상품 사진' })) : demoImages, [previews]);
+  const shownImages = useMemo(() => previews.length ? previews.map((src) => ({ src, alt: '업로드한 상품 사진' })) : demoImages.map((image) => ({ ...image, src: `${assetBase}${image.src.slice(1)}` })), [previews, assetBase]);
 
   function addFiles(incoming: FileList | null) {
+    if (demoOnly) return;
     if (!incoming) return;
     const next = Array.from(incoming).filter((file) => file.type.startsWith('image/')).slice(0, 6);
     previews.forEach((url) => URL.revokeObjectURL(url));
@@ -71,6 +76,7 @@ export default function Home() {
   }
 
   async function analyze() {
+    if (demoOnly) { loadDemo(); setState('success'); return; }
     if (!listingText.trim()) { setError('판매글 내용을 붙여 넣어 주세요.'); setState('error'); return; }
     if (!isDemo && files.length === 0) { setError('상품 사진을 한 장 이상 올려 주세요.'); setState('error'); return; }
     setState('analyzing'); setError(''); setProgress(18);
@@ -116,6 +122,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[var(--canvas)] text-slate-950">
+      {demoOnly && <div role="note" className="bg-sky-950 px-5 py-3 text-center text-sm text-white">GitHub Pages 대표 사례 데모입니다. 결과는 미리 준비된 예시이며, 실제 사진 분석은 서버와 API 키를 설정한 환경에서 이용할 수 있습니다.</div>}
       <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-[color:var(--canvas)]/92 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-[1480px] items-center justify-between px-4 sm:px-7">
           <div className="flex items-center gap-3">
@@ -138,16 +145,16 @@ export default function Home() {
           <div className="space-y-6 p-5 sm:p-6">
             <div>
               <div className="mb-2.5 flex items-end justify-between"><label htmlFor="listing" className="text-sm font-bold text-slate-800">판매글 내용</label><span className="text-[11px] tabular-nums text-slate-400">{listingText.length.toLocaleString()} / 5,000</span></div>
-              <Textarea id="listing" value={listingText} maxLength={5000} onChange={(event) => { setListingText(event.target.value); setIsDemo(false); }} placeholder="당근·중고나라 판매글 내용을 붙여 넣어 주세요." className="min-h-[196px] resize-none rounded-2xl border-slate-200 bg-slate-50/70 px-4 py-3.5 text-[13px] leading-6 shadow-inner shadow-slate-100 focus-visible:border-orange-400 focus-visible:ring-orange-100" />
+              <Textarea readOnly={demoOnly} id="listing" value={listingText} maxLength={5000} onChange={(event) => { setListingText(event.target.value); setIsDemo(false); }} placeholder="당근·중고나라 판매글 내용을 붙여 넣어 주세요." className="min-h-[196px] resize-none rounded-2xl border-slate-200 bg-slate-50/70 px-4 py-3.5 text-[13px] leading-6 shadow-inner shadow-slate-100 focus-visible:border-orange-400 focus-visible:ring-orange-100" />
             </div>
 
             <div>
               <div className="mb-2.5 flex items-center justify-between"><span className="text-sm font-bold text-slate-800">상품 사진</span><span className="text-[11px] text-slate-400">JPG, PNG · 최대 6장</span></div>
-              <button type="button" onClick={() => inputRef.current?.click()} onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); addFiles(event.dataTransfer.files); }} className="group flex w-full flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50/70 px-5 py-7 text-center transition hover:border-orange-400 hover:bg-orange-50/40 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-orange-100">
+              <button type="button" disabled={demoOnly} onClick={() => inputRef.current?.click()} onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); addFiles(event.dataTransfer.files); }} className="group flex w-full flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50/70 px-5 py-7 text-center transition hover:border-orange-400 hover:bg-orange-50/40 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-orange-100">
                 <span className="mb-3 grid size-11 place-items-center rounded-2xl border border-slate-200 bg-white text-slate-600 shadow-sm transition group-hover:-translate-y-0.5 group-hover:text-orange-600"><ImagePlus className="size-5" /></span>
-                <span className="text-sm font-semibold text-slate-700">사진을 선택하거나 여기로 끌어오세요</span><span className="mt-1 text-xs text-slate-400">정면·후면·모서리·구성품 사진이 좋아요</span>
+                <span className="text-sm font-semibold text-slate-700">{demoOnly ? '대표 사례 사진으로 체험합니다' : '사진을 선택하거나 여기로 끌어오세요'}</span><span className="mt-1 text-xs text-slate-400">정면·후면·모서리·구성품 사진이 좋아요</span>
               </button>
-              <input ref={inputRef} type="file" accept="image/*" multiple className="sr-only" onChange={(event) => addFiles(event.target.files)} />
+              <input disabled={demoOnly} ref={inputRef} type="file" accept="image/*" multiple className="sr-only" onChange={(event) => addFiles(event.target.files)} />
               {files.length > 0 && <div className="mt-3 grid grid-cols-6 gap-2">{previews.map((src, index) => <div key={src} className="relative aspect-square overflow-hidden rounded-xl border border-slate-200 bg-slate-100"><img src={src} alt={`업로드 사진 ${index + 1}`} className="size-full object-cover" /><span className="absolute bottom-1 left-1 rounded-md bg-slate-950/75 px-1.5 py-0.5 text-[9px] font-bold text-white">{index + 1}</span></div>)}</div>}
             </div>
 
@@ -155,7 +162,7 @@ export default function Home() {
             {state === 'analyzing' ? (
               <div className="rounded-2xl border border-orange-200 bg-orange-50/70 p-4"><div className="mb-3 flex items-center gap-3"><LoaderCircle className="size-5 animate-spin text-orange-600" /><div><p className="text-sm font-bold text-slate-900">주장과 사진을 대조하고 있어요</p><p className="text-xs text-slate-500">외관 특징과 확인 불가능한 항목을 분리합니다</p></div></div><Progress value={progress} className="[&_[data-slot=progress-indicator]]:bg-orange-500 [&_[data-slot=progress-track]]:bg-orange-100" /></div>
             ) : (
-              <div className="flex gap-2.5"><Button onClick={analyze} size="lg" className="h-12 flex-1 rounded-xl bg-orange-600 px-5 text-sm font-bold text-white shadow-[0_8px_22px_rgba(234,88,12,0.22)] hover:bg-orange-700"><Sparkles data-icon="inline-start" /> AI로 교차 점검 <ArrowRight data-icon="inline-end" /></Button><Button onClick={loadDemo} variant="outline" size="lg" className="h-12 rounded-xl border-slate-200 px-4 text-slate-600 hover:bg-slate-50">대표 사례</Button></div>
+              <div className="flex gap-2.5"><Button onClick={analyze} size="lg" className="h-12 flex-1 rounded-xl bg-orange-600 px-5 text-sm font-bold text-white shadow-[0_8px_22px_rgba(234,88,12,0.22)] hover:bg-orange-700"><Sparkles data-icon="inline-start" /> {demoOnly ? '대표 사례 결과 보기' : 'AI로 교차 점검'} <ArrowRight data-icon="inline-end" /></Button><Button onClick={loadDemo} variant="outline" size="lg" className="h-12 rounded-xl border-slate-200 px-4 text-slate-600 hover:bg-slate-50">대표 사례</Button></div>
             )}
             <p className="flex items-start gap-2 text-[11px] leading-5 text-slate-400"><ShieldCheck className="mt-0.5 size-3.5 shrink-0" />결과는 거래 판단을 돕는 참고 정보입니다. 제품 상태나 거래 안전을 확정하지 않습니다.</p>
           </div>
